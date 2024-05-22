@@ -1,0 +1,43 @@
+---
+title: React Paris Meetup #1
+---
+
+layout: mainSection
+
+---
+
+import { Side, Text } from "@gpichot/spectacle-deck";
+import { talks } from "./data";
+
+# React Paris Meetup #1
+
+---
+
+layout: side
+
+---
+
+## **Talks**
+
+<Side>
+
+{talks.map(({ title, speaker }) => (
+
+<div key={title}>
+
+<Text>{title}</Text>
+<Text>by {speaker.name}</Text>
+
+</div>
+
+))}
+
+</Side>
+
+---
+
+layout: centered
+
+---
+
+:qrcode[https://tally.co/]

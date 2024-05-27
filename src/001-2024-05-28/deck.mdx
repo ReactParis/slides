@@ -6,10 +6,88 @@ layout: mainSection
 
 ---
 
-import { Side, Text } from "@gpichot/spectacle-deck";
+import { Side, Text, Image } from "@gpichot/spectacle-deck";
+import { ItemsColumn } from "@gpichot/spectacle-deck";
 import { talks } from "./data";
+import { TalkCard, TalkList } from "../common/TalkCard";
 
 # React Paris Meetup #1
+
+---
+
+layout: centered
+
+---
+
+## **[Code of Conduct](https://github.com/ReactParis/.github/blob/main/CODE_OF_CONDUCT.markdown)**
+
+https://link.infini.fr/code-of-conduct
+
+:qrcode[https://github.com/ReactParis]
+
+---
+
+layout: sidedImage
+
+---
+
+## **Talks/Hosts/Co-organizers**
+
+import weNeedYou from "../common/minion-we-need-you.jpeg";
+
+<Image
+  src={weNeedYou}
+  alt="We need you"
+  style={{ maxHeight: "50vh", objectFit: "contain" }}
+/>
+
+---
+
+layout: side
+
+---
+
+## **Where to contact us**
+
+<Side>
+
+- [GitHub](https://github.com/ReactParis)
+
+- [Discord](https://discord.gg/EGeZmfJbKB)
+
+<div style={{alignSelf: 'center'}}>
+
+:qrcode[https://discord.gg/EGeZmfJbKB]
+
+</div>
+
+- LinkedIn, Twitter, Meetup, etc.
+
+</Side>
+
+---
+
+layout: side
+
+---
+
+## **Community Events**
+
+<Side>
+<ItemsColumn>
+
+Wed 29/05, ParisJS #116<br /> @Nexton (ParisJS)
+
+Thu 30/05, Bonjour Remix<br /> @Publicis Sapient (Remix Paris)
+
+Wed 05/06, dotJS x ParisJS<br /> @Qonto (ParisJS)
+
+Tue 11/06, Paris TypeScript #38<br /> @Pigment SAS (Paris TypeScript)
+
+Tue 18/06, React Paris Meetup #2<br /> @In The Memory (React Paris Meetup)
+
+</ItemsColumn>
+</Side>
 
 ---
 
@@ -20,24 +98,13 @@ layout: side
 ## **Talks**
 
 <Side>
+  <TalkList>
 
-{talks.map(({ title, speaker }) => (
+{talks.map((talk) => (
 
-<div key={title}>
-
-<Text>{title}</Text>
-<Text>by {speaker.name}</Text>
-
-</div>
+<TalkCard key={talk.title} talk={talk} />
 
 ))}
 
+  </TalkList>
 </Side>
-
----
-
-layout: centered
-
----
-
-:qrcode[https://tally.co/]

@@ -5,6 +5,24 @@ const communityMeetups = [
     date: "Mardi 25 Juin",
     location: "Valtech",
   },
+  {
+    groupName: "Effect Paris",
+    title: "Effect Paris #2",
+    date: "Mardi 25 Juin",
+    location: "",
+  },
+  {
+    groupName: "Accelerator Engineering",
+    title: "Accelerator #6",
+    date: "Mardi 25 Juin",
+    location: "Sanofi",
+  },
+  {
+    groupName: "DotJS",
+    title: "DotJS Paris 2024",
+    date: "Jeudi 27 Juin",
+    location: "",
+  },
 ];
 
 const talks = [
@@ -54,3 +72,10 @@ Avec entre autre les nouveautÃ©s compilateur React pour essayer de comprendre oÃ
 ];
 
 export { communityMeetups, talks };
+
+const talkParameters = talks.map((talk, index) => {
+  return `Talk${index + 1}=${talk.title} by ${talk.speaker.name}`;
+});
+console.log(
+  `URL: https://tally.so/r/wbkWze?MeetupID=2&${talkParameters.join("&")}`,
+);

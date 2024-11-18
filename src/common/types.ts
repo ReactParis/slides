@@ -9,3 +9,14 @@ export interface ITalk {
   description: string;
   speaker: ISpeaker;
 }
+
+export interface IOrg {
+  title: string;
+  name: string;
+  profilePicture: string;
+  social: {
+    discord?: string;
+    linkedin?: string;
+    twitter?: string;
+  };
+}

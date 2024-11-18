@@ -29,8 +29,8 @@ const TalkDetails = styled.div`
 `;
 
 const TalkTitle = styled(Text)`
-  font-weight: bold;
-  font-family: Bitter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-family: Bitter, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 `;
 
 const SpeakerInfo = styled.div`
@@ -40,7 +40,7 @@ const SpeakerInfo = styled.div`
 `;
 
 const SpeakerName = styled(Text)`
-  font-weight: bold;
+  font-weight: 500;
   font-family: Bitter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 `;
 

@@ -30,6 +30,7 @@ const communityMeetups = [
     location: "Paris, FR",
   },
 ];
+export const orgs = [];
 
 const talks = [
   {

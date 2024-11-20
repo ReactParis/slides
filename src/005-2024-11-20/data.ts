@@ -49,7 +49,6 @@ export const orgs = [
       "https://media.licdn.com/dms/image/v2/D4E03AQG7MuxLmtWyNw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675944197511?e=1736380800&v=beta&t=qw8O6jDuCr7K6_WnbDg-4YGVj7KDSFdF_RczQlDNLwM",
     social: {
       discord: "shouboudou",
-      twitter: "Jeremie__",
     },
   },
 ];

@@ -75,4 +75,22 @@ export const communityMeetups = [
     location: "43-47 Avenue de la Grande Armée, 75016 Paris",
     groupName: "Accelerator by Sanofi",
   },
+  {
+    title: "Paris TypeScript #41",
+    date: "January 14, 2025",
+    location: "TBA",
+    groupName: "Paris TypeScript",
+  },
+  {
+    title: "TypeScript La Conf'",
+    date: "February 28, 2025",
+    location: "TBA",
+    groupName: "TypeScript La Conf'",
+  },
+  {
+    title: "React Paris Conf",
+    date: "March 20-21, 2025",
+    location: "TBA",
+    groupName: "React Paris",
+  },
 ];

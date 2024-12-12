@@ -39,9 +39,10 @@ export const talks: ITalk[] = [
       "In this talk, we'll explore the Remix framework and uncover its core principles. We'll discuss what Remix enables developers to achieve, how it embraces modern web standards, and what to expect from its future evolution in the web development landscape.",
     speaker: {
       name: "Rémi Peron",
-      role: "CTO Freelance",
+      title: "CTO Freelance",
+      profilePicture:
+        "https://media.licdn.com/dms/image/v2/D4E03AQHwBqNgAfLLVA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1720095902128?e=1739404800&v=beta&t=iYLCKE4MS9LG2DQ0mMVDtmrVDw-4FK2G2xCpaVIMltU",
     },
-    language: "🇬🇧",
   },
   {
     title: "Next.js et le cache",
@@ -49,19 +50,21 @@ export const talks: ITalk[] = [
       "Un retour d'expérience sur l'amélioration d'une plateforme e-commerce (PickSale) avec l'objectif d'avoir le maximum de pages statiques et de cache, tout en conservant du dynamisme. Nous aborderons la fonction cache de React, le `unstable_cache` de Next.js, la génération statique au build et au runtime, le contrôle du cache et les CDN.",
     speaker: {
       name: "Lenclos Thibault",
-      role: "Co-fondateur et développeur chez Premier Octet",
+      title: "Co-fondateur et développeur chez Premier Octet",
+      profilePicture:
+        "https://media.licdn.com/dms/image/v2/D5603AQHhiN7gUNM6Ww/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1729260627752?e=1739404800&v=beta&t=QKbZU-zDchcXHGMV5IhtgPazq-gZfenuWefcVWxHMgU",
     },
-    language: "🇫🇷",
   },
   {
-    title: "Créer une extension VS Code pour booster son DSL, les dessous",
+    title: "Créer une extension VS Code pour booster son DSL",
     description:
       "Qui n'a jamais rêvé de créer son propre langage? Découvrez comment aller au-delà d'un simple parser pour créer une expérience développeur complète: de la coloration syntaxique aux erreurs et suggestions contextuelles, des aperçus rapides au renommage et à la navigation par symboles.",
     speaker: {
       name: "Loïc Knuchel",
-      role: "Fondateur at Azimutt",
+      title: "Fondateur at Azimutt",
+      profilePicture:
+        "https://media.licdn.com/dms/image/v2/C5603AQHjUc-HSLLGVw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1584442121134?e=1739404800&v=beta&t=QSB9bpZ3Ue7YceDnxSbhhAjlhv26FIHfzzEgrVK9elc",
     },
-    language: "🇫🇷",
   },
 ];
 

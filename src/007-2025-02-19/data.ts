@@ -45,4 +45,34 @@ export const communityMeetups = [
     location: "46 rue de l'Arbre Sec, 75001 Paris",
     groupName: "L'atelier",
   },
+  {
+    title: "Paris.JS #118",
+    date: "26 Feb 2025",
+    location: "Swan",
+    groupName: "Paris.JS • Paris, FR",
+  },
+  {
+    title: "Paris TypeScript la Conf'",
+    date: "28 Feb 2025",
+    location: "Paris",
+    groupName: "Paris TypeScript • Paris, FR",
+  },
+  {
+    title: "Node.js Paris #5, Chapitre 12 - UpFast",
+    date: "5 Mar 2025",
+    location: "Paris",
+    groupName: "Node.js Paris • Paris, FR",
+  },
+  {
+    title: "Remix Épique - Kent C. Dodds",
+    date: "18 Mar 2025",
+    location: "Paris",
+    groupName: "Remix Paris • Paris, FR",
+  },
+  {
+    title: "React Paris Conf",
+    date: "20-21 Mar 2025",
+    location: "Paris",
+    groupName: "React Paris",
+  },
 ];

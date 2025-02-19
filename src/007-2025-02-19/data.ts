@@ -1,4 +1,4 @@
-import { ITalk } from "../common/types";
+import { ISpeaker, ITalk } from "../common/types";
 
 export const talks: ITalk[] = [
   {
@@ -32,9 +32,33 @@ export const talks: ITalk[] = [
 
 export const orgs = [
   {
-    name: "L'atelier",
-    logo: "./latelier.png",
-    url: "https://www.latelier.co/",
+    title: "",
+    name: "Gabriel Pichot",
+    profilePicture:
+      "https://avatars.githubusercontent.com/u/1295737?s=400&u=d3bf0222d7fb990f0fe63b8424497fa308ce379f&v=4",
+    social: {
+      discord: "gabriel.pi",
+      twitter: "gabrielpichot",
+    },
+  },
+  {
+    title: "",
+    name: "Sylvain Pontoreau",
+    profilePicture:
+      "https://media.licdn.com/dms/image/v2/D5603AQElUf7P8xMVMQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1631633898597?e=1736380800&v=beta&t=IvUNlvZHJjJQv3G1O8TnWFIzuVVF_uoV-H1VC8ELxhY",
+    social: {
+      discord: "spontoreau",
+      twitter: "spontoreau",
+    },
+  },
+  {
+    title: "",
+    name: "Jérémie Zarca",
+    profilePicture:
+      "https://media.licdn.com/dms/image/v2/D4E03AQG7MuxLmtWyNw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1675944197511?e=1736380800&v=beta&t=qw8O6jDuCr7K6_WnbDg-4YGVj7KDSFdF_RczQlDNLwM",
+    social: {
+      discord: "shouboudou",
+    },
   },
 ];
 

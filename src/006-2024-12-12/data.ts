@@ -70,12 +70,6 @@ export const talks: ITalk[] = [
 
 export const communityMeetups = [
   {
-    title: "React Paris Meetup #6",
-    date: "December 12, 2024",
-    location: "43-47 Avenue de la Grande Armée, 75016 Paris",
-    groupName: "Accelerator by Sanofi",
-  },
-  {
     title: "Paris TypeScript #41",
     date: "January 14, 2025",
     location: "TBA",
@@ -94,3 +88,10 @@ export const communityMeetups = [
     groupName: "React Paris",
   },
 ];
+
+const talkParameters = talks.map((talk, index) => {
+  return `Talk${index + 1}=${talk.title} by ${talk.speaker.name}`;
+});
+console.log(
+  `URL: https://tally.so/r/wbkWze?MeetupID=2&${talkParameters.join("&")}`,
+);

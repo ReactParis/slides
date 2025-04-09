@@ -1,0 +1,152 @@
+---
+title: React Paris Meetup #8
+---
+
+layout: mainSection
+
+---
+
+import { Side, Text, Image } from "@gpichot/spectacle-deck";
+import { ItemsColumn } from "@gpichot/spectacle-deck";
+import { talks, communityMeetups, orgs, eventDetails } from "./data";
+import { TalkCard, TalkList } from "../common/TalkCard";
+import { OrgCard, OrgList } from "../common/OrgCard";
+
+# React Paris Meetup #8
+
+---
+
+layout: centered
+
+---
+
+## **[Code of Conduct](https://github.com/ReactParis/.github/blob/main/CODE_OF_CONDUCT.markdown)**
+
+https://link.infini.fr/code-of-conduct
+
+:qrcode[https://github.com/ReactParis]
+
+Be respectful
+
+---
+
+layout: centered
+
+---
+
+## Team
+
+<OrgList orgs={orgs} />
+
+---
+
+layout: sidedImage
+
+---
+
+## **Talks**
+
+import weNeedYou from "../common/minion-we-need-you.jpeg";
+
+<Image
+  src={weNeedYou}
+  alt="We need you"
+  style={{ maxHeight: "50vh", objectFit: "contain" }}
+/>
+
+Want to speak at our next meetup? We're looking for talks about:
+
+- React Fundamentals and Core Concepts
+- Advanced Techniques and Best Practices
+- Framework deep-dives (Next.js, Remix, etc.)
+- Performance optimization
+- Developer Experience & Tooling
+- Your React success stories!
+
+---
+
+layout: side
+
+---
+
+## **Where to contact us**
+
+<Side>
+
+- [GitHub](https://github.com/ReactParis)
+
+- [Discord](https://discord.gg/EGeZmfJbKB)
+
+<div style={{alignSelf: 'center'}}>
+
+:qrcode[https://discord.gg/EGeZmfJbKB]
+
+</div>
+
+- LinkedIn, Twitter, Meetup, etc.
+
+</Side>
+
+---
+
+layout: side
+
+---
+
+## **Community Events**
+
+<Side>
+<ItemsColumn>
+
+{communityMeetups.map((meetup) => (
+
+<p>
+  {meetup.date}, {meetup.title}
+  <br /> {meetup.location} ({meetup.groupName})
+</p>
+
+))}
+
+</ItemsColumn>
+</Side>
+
+---
+
+layout: side
+
+---
+
+## **Tonight's Talks**
+
+<Side>
+  <TalkList>
+
+{talks.map((talk) => (
+
+<TalkCard key={talk.title} talk={talk} />
+
+))}
+
+  </TalkList>
+</Side>
+
+---
+
+layout: centered
+
+---
+
+import elevenlabs from "./elevenlabs.png";
+
+<Image
+  src={elevenlabs}
+  width="30vw"
+  height="30vh"
+  style={{ objectFit: "contain", backgroundColor: "transparent" }}
+/>
+
+<br />
+<br />
+
+### **Tonight's host: {eventDetails.host}**
+### {eventDetails.address}

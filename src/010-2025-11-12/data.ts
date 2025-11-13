@@ -1,5 +1,7 @@
 import { ISpeaker, ITalk } from "../common/types";
 
+import jeremie from "../../assets/2025-11-12-13-48-42.png";
+
 export const talks: ITalk[] = [
 	{
 		title: "Réinventer l'entretien technique à l'ère de l'IA",
@@ -22,7 +24,7 @@ export const talks: ITalk[] = [
 			profilePicture:
 				"https://media.licdn.com/dms/image/v2/D4E03AQE6V5TH0CocUw/profile-displayphoto-shrink_200_200/B4EZbxLowHHkAY-/0/1747803082842?e=1763596800&v=beta&t=eWJb05tFlDTPWQBthY_7smVXRgPH6NvBBzQGbEThveM",
 		},
-	}
+	},
 ];
 
 export const orgs = [
@@ -49,8 +51,7 @@ export const orgs = [
 	{
 		title: "",
 		name: "Jérémie Zarca",
-		profilePicture:
-			"https://media.licdn.com/dms/image/v2/D4E03AQG7MuxLmtWyNw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1675944197511?e=1745452800&v=beta&t=-MdfriEhwMUUrnt876O2-66SAzfk3TDNMTBWcDhnSms",
+		profilePicture: jeremie,
 		social: {
 			discord: "shouboudou",
 		},

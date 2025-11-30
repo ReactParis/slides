@@ -1,6 +1,4 @@
-import { ISpeaker, ITalk } from "../common/types";
-
-import jeremie from "../../assets/2025-11-12-13-48-42.png";
+import { IEvent, IOrg, ITalk } from "../common/types";
 
 export const talks: ITalk[] = [
 	{
@@ -27,7 +25,7 @@ export const talks: ITalk[] = [
 	},
 ];
 
-export const orgs = [
+export const orgs: IOrg[] = [
 	{
 		title: "",
 		name: "Gabriel Pichot",
@@ -51,14 +49,14 @@ export const orgs = [
 	{
 		title: "",
 		name: "Jérémie Zarca",
-		profilePicture: jeremie,
+		profilePicture: "https://avatars.githubusercontent.com/u/9349451??s=400&u=d3bf0222d7fb990f0fe63b8424497fa308ce379f&v=4",
 		social: {
 			discord: "shouboudou",
 		},
 	},
 ];
 
-export const communityMeetups = [
+export const communityMeetups: IEvent[] = [
 	{
 		title: "Svelte Paris #4",
 		date: "19 Novembre 2025",
@@ -73,7 +71,7 @@ export const communityMeetups = [
 	},
 ];
 
-export const eventDetails = {
+export const eventDetails: IEvent = {
 	title: "React Paris Meetup #10",
 	date: "12 Novembre 2025 19h",
 	host: "Alan",

@@ -20,3 +20,12 @@ export interface IOrg {
     twitter?: string;
   };
 }
+
+export interface IEvent {
+  title: string,
+  date: string,
+  location?: string,
+  groupName?: string,
+  host?: string,
+  address?: string
+}

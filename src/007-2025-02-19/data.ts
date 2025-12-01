@@ -1,4 +1,4 @@
-import { ISpeaker, ITalk } from "../common/types";
+import { ITalk } from "../common/types";
 
 export const talks: ITalk[] = [
 	{

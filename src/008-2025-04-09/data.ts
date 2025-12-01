@@ -1,4 +1,4 @@
-import { ISpeaker, ITalk } from "../common/types";
+import { ITalk } from "../common/types";
 
 export const talks: ITalk[] = [
 	{
@@ -24,7 +24,8 @@ export const talks: ITalk[] = [
 		},
 	},
 	{
-		title: "Comment j'ai fait twerker mes collègues sur un dancefloor avec React",
+		title:
+			"Comment j'ai fait twerker mes collègues sur un dancefloor avec React",
 		description:
 			"Pour l'occasion des 5 ans de Premier Octet, agence experte dans le développement d'application React et React Native, j'ai voulu créer une scène virtuelle 3D de notre équipe. L'occasion d'apprendre quelques bases de 3D, d'animations, de temps réel, le tout avec React bien entendu.",
 		speaker: {

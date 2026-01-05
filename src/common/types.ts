@@ -10,10 +10,7 @@ export interface ITalk {
   speaker: ISpeaker;
 }
 
-export interface IOrg {
-  title: string;
-  name: string;
-  profilePicture: string;
+export interface IOrg extends ISpeaker {
   social: {
     discord?: string;
     linkedin?: string;

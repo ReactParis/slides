@@ -5,7 +5,7 @@ import { talks, communityMeetups, orgs, eventDetails } from "./data";
 import { TalkCard, TalkList } from "../common/TalkCard";
 import { OrgCard, OrgList } from "../common/OrgCard";
 import weNeedYou from "../common/minion-we-need-you.jpeg";
-import latelier from "./latelier.png";
+import linxea from "./linxea.jpg";
 
 
 import React from 'react';
@@ -20,7 +20,7 @@ export function Slide0(baseProps) {
     ...props.components
   };
   const {wrapper: MDXLayout} = _components;
-  return <MDXLayout {...props}>   <_components.h1>{"React Paris Meetup #11"}</_components.h1></MDXLayout>;
+  return <MDXLayout {...props}>   <_components.h1>{"React Paris Meetup #12"}</_components.h1></MDXLayout>;
 }
 
  
@@ -129,7 +129,7 @@ export function Slide7(baseProps) {
     ...props.components
   };
   const {wrapper: MDXLayout} = _components;
-  return <MDXLayout {...props}> <Image src={latelier} width="30vw" height="30vh" style={{
+  return <MDXLayout {...props}> <Image src={linxea} width="30vw" height="30vh" style={{
     objectFit: "contain",
     backgroundColor: "transparent"
   }} />{"\n"}<br />{"\n"}<br />{"\n"}<_components.h3><_components.strong>{"Tonight's host: "}{eventDetails.host}</_components.strong></_components.h3> </MDXLayout>;

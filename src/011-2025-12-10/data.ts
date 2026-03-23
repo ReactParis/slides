@@ -1,4 +1,4 @@
-import { IEvent, IOrg, ITalk } from "../common/types";
+import { ICommunityEvent, IOurEvent, IOrg, ITalk } from "../common/types";
 
 export const talks: ITalk[] = [
 	{
@@ -57,7 +57,7 @@ export const orgs: IOrg[] = [
 	},
 ];
 
-export const communityMeetups: IEvent[] = [
+export const communityMeetups: ICommunityEvent[] = [
 	{
 		title: "Paris Angular #5",
 		date: "11 Décembre 2025",
@@ -72,7 +72,8 @@ export const communityMeetups: IEvent[] = [
 	},
 ];
 
-export const eventDetails: IEvent = {
+export const eventDetails: IOurEvent = {
+	id: 11,
 	title: "React Paris Meetup #11",
 	date: "10 Décembre 2025 19h",
 	host: "L'Atelier",
@@ -83,5 +84,5 @@ const talkParameters = talks.map((talk, index) => {
 	return `Talk${index + 1}=${talk.title} by ${talk.speaker.name}`;
 });
 console.log(
-	`URL: https://tally.so/r/wbkWze?MeetupID=3&${talkParameters.join("&")}`,
+  `URL: https://tally.so/r/wbkWze?MeetupID=${eventDetails.id}&${talkParameters.join("&")}`
 );

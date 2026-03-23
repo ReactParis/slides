@@ -21,8 +21,15 @@ export interface IOrg extends ISpeaker {
 export interface IEvent {
   title: string,
   date: string,
+}
+
+export interface ICommunityEvent extends IEvent {
   location?: string,
   groupName?: string,
-  host?: string,
-  address?: string
+}
+
+export interface IOurEvent extends IEvent {
+  id: number
+  host: string,
+  address: string
 }

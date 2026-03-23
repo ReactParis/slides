@@ -3,24 +3,24 @@ import { ICommunityEvent, IOrg, IOurEvent, ITalk } from "../common/types";
 export const talks: ITalk[] = [
   {
     title:
-      "Créer un Domain-Specific Language (DSL) avec des Compound Components",
+      "Zustand, simple and performant state management",
     description:
-      "Nous avons tous connu un composant utilisé partout de la même façon, mais un peu différemment à chaque fois. Dans ce talk, Guillaume présentera les Compound Component et leur lien avec la notion de Domain Specific Language.",
+      "Zustand est une librairie de state management pour React qui permet de contourner des limitations et des problèmes de performance que peuvent avoir useState ou les contexts. Je vous en présente l'utilisation que j'en fait depuis plus de 4 ans.",
     speaker: {
-      name: "Guillaume Desforges",
+      name: "Arnaud Barré",
       title: "Software Engineer",
       profilePicture:
-        "https://avatars.githubusercontent.com/u/1882000?v=4",
+        "https://avatars.githubusercontent.com/u/14235743?v=4",
     },
   },
   {
-    title: "Migration d'un site fait avec NextJS vers Tanstack Router",
+    title: "Liqvid: Vidéos intéractives avec React",
     description:
-      "Ce talk a pour but de présenter le framework full-stack Tanstack-Start, et les raisons qui ont motivé cette migration, les obstacles rencontrés, les optimisations découvertes en cours de route, et surtout, un retour d'expérience honnête sur ce que cette transition apporte réellement en termes de performance, de coûts et d'expérience développeur.",
+      "Liqvid est un framework pour créer des vidéos intéractives avec React. Il est particulièrement visé aux tutoriels et aux cours. Je présenterai ses fonctionnalités, ses intégrations avec d'autres librairies (e.g. CodeMirror, THREE.js), et quelques-uns des défis particuliers de son développement.",
     speaker: {
-      name: "Théo Senoussaoui",
-      title: "Full Stack Developer",
-      profilePicture: "https://avatars.githubusercontent.com/u/14891070?v=4",
+      name: "Yuri Sulyma",
+      title: "Fondateur de Liqvid",
+      profilePicture: "https://avatars.githubusercontent.com/u/453486?v=4",
     },
   },
 ];
@@ -60,37 +60,37 @@ export const orgs: IOrg[] = [
 
 export const communityMeetups: ICommunityEvent[] = [
   {
-    title: "Vue.js Paris #32",
-    date: "22 Janvier 2026",
+    title: "React Paris Conf",
+    date: "26-27 Mars 2026",
+    location: "Paris, FR",
+    groupName: "React Paris",
+  },
+  {
+    title: "Vue.js Paris #33",
+    date: "1e avril 2026",
     location: "Paris, FR",
     groupName: "Vue.js Paris",
   },
   {
-    title: "Effect Paris #6",
-    date: "3 février 2026",
+    title: "Node.js Paris, Épisode #5 Saison 13",
+    date: "1e avril 2026",
     location: "Paris, FR",
-    groupName: "Effect Paris",
+    groupName: "Node.js Paris",
   },
   {
     title: "Paris TypeScript #46",
     date: "10 février 2026",
     location: "Paris, FR",
     groupName: "Paris TypeScript",
-  },
-  {
-    title: "React Paris Conf",
-    date: "26-27 Mars 2026",
-    location: "Paris, FR",
-    groupName: "React Paris",
-  },
+  }
 ];
 
 export const eventDetails: IOurEvent = {
-  id: 12,
-  title: "React Paris Meetup #12",
-  date: "21 Janvier 2026 19h",
-  host: "Linxea",
-  address: "58 Avenue Hoche, 75008 Paris, France",
+  id: 13,
+  title: "React Paris Meetup #13",
+  date: "24 Mars 2026 19h",
+  host: "Neosoft",
+  address: "3 Rue de Tolbiac, 75013 Paris, France",
 };
 
 const talkParameters = talks.map((talk, index) => {

@@ -5,7 +5,7 @@ import { talks, communityMeetups, orgs, eventDetails } from "./data";
 import { TalkCard, TalkList } from "../common/TalkCard";
 import { OrgCard, OrgList } from "../common/OrgCard";
 import weNeedYou from "../common/minion-we-need-you.jpeg";
-import linxea from "./linxea.jpg";
+import neosoft from "./neosoft.png";
 
 
 import React from 'react';
@@ -20,7 +20,7 @@ export function Slide0(baseProps) {
     ...props.components
   };
   const {wrapper: MDXLayout} = _components;
-  return <MDXLayout {...props}>   <_components.h1>{"React Paris Meetup #12"}</_components.h1></MDXLayout>;
+  return <MDXLayout {...props}>   <_components.h1>{"React Paris Meetup #13"}</_components.h1></MDXLayout>;
 }
 
  
@@ -67,7 +67,7 @@ export function Slide3(baseProps) {
   return <MDXLayout {...props}> <_components.h2><_components.strong>{"Talks"}</_components.strong></_components.h2>{"\n"}<Image src={weNeedYou} alt="We need you" style={{
     maxHeight: "50vh",
     objectFit: "contain"
-  }} />{"\n"}<_components.p>{"Want to speak at our next meetup?"}</_components.p>{"\n"}<_components.ul>{"\n"}<_components.li>{"\n"}<_components.p>{"React 19 & React Compiler (new features, deep dive)"}</_components.p>{"\n"}</_components.li>{"\n"}<_components.li>{"\n"}<_components.p>{"AI integration (best practices, ROI, future of React + AI)"}</_components.p>{"\n"}</_components.li>{"\n"}<_components.li>{"\n"}<_components.p>{"Performance (build optimization, data loading, frontend perf)"}</_components.p>{"\n"}</_components.li>{"\n"}<_components.li>{"\n"}<_components.p>{"Modern tooling (Next.js, Turborepo, Tanstack Start, CSS management)"}</_components.p>{"\n"}</_components.li>{"\n"}<_components.li>{"\n"}<_components.p>{"Architecture & patterns (scalable code, senior-level development)"}</_components.p>{"\n"}</_components.li>{"\n"}</_components.ul> </MDXLayout>;
+  }} />{"\n"}<_components.p>{"Want to speak at our next meetup?"}</_components.p>{"\n"}<_components.ul>{"\n"}<_components.li>{"React 19 & React Compiler (new features, deep dive)"}</_components.li>{"\n"}<_components.li>{"AI integration (best practices, ROI, future of React + AI)"}</_components.li>{"\n"}<_components.li>{"Performance (build optimization, data loading, frontend perf)"}</_components.li>{"\n"}<_components.li>{"Modern tooling (Next.js, Turborepo, Tanstack Start, CSS management)"}</_components.li>{"\n"}<_components.li>{"Architecture & patterns (scalable code, senior-level development)"}</_components.li>{"\n"}</_components.ul> </MDXLayout>;
 }
 
  
@@ -94,18 +94,16 @@ export function Slide4(baseProps) {
 export function Slide5(baseProps) {
   const props = {...baseProps, frontmatter: {"layout":"side"} };
   const _components = {
-    br: "br",
     h2: "h2",
-    p: "p",
     strong: "strong",
     ..._provideComponents(),
     ...props.components
   };
   const {wrapper: MDXLayout} = _components;
-  return <MDXLayout {...props}> <_components.h2><_components.strong>{"Community Events"}</_components.strong></_components.h2>{"\n"}<Side><ItemsColumn>{communityMeetups.map(meetup => <_components.p>
-  {meetup.date}, {meetup.title}
-  <_components.br /> {meetup.location} ({meetup.groupName})
-</_components.p>)}</ItemsColumn></Side> </MDXLayout>;
+  return <MDXLayout {...props}> <_components.h2><_components.strong>{"Community Events"}</_components.strong></_components.h2>{"\n"}<Side><ItemsColumn>{communityMeetups.map((meetup, indx) => <p key={`meetup-${indx}`}>
+{meetup.date}, {meetup.title}
+<br /> {meetup.location} ({meetup.groupName})
+</p>)}</ItemsColumn></Side> </MDXLayout>;
 }
 
  
@@ -131,7 +129,7 @@ export function Slide7(baseProps) {
     ...props.components
   };
   const {wrapper: MDXLayout} = _components;
-  return <MDXLayout {...props}> <Image src={linxea} width="30vw" height="30vh" style={{
+  return <MDXLayout {...props}> <Image src={neosoft} width="30vw" height="30vh" style={{
     objectFit: "contain",
     backgroundColor: "transparent"
   }} />{"\n"}<br />{"\n"}<br />{"\n"}<_components.h3><_components.strong>{"Tonight's host: "}{eventDetails.host}</_components.strong></_components.h3> </MDXLayout>;

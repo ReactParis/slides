@@ -1,5 +1,5 @@
 ---
-title: React Paris Meetup #13
+title: "React Paris Meetup #13 @ Neosoft - 24/03/2026"
 ---
 
 layout: mainSection
@@ -11,6 +11,7 @@ import { ItemsColumn } from "@gpichot/spectacle-deck";
 import { talks, communityMeetups, orgs, eventDetails } from "./data";
 import { TalkCard, TalkList } from "../common/TalkCard";
 import { OrgCard, OrgList } from "../common/OrgCard";
+import { EventCard, EventList } from "../common/EventCard";
 
 # React Paris Meetup #13
 
@@ -95,18 +96,15 @@ layout: side
 ## **Community Events**
 
 <Side>
-<ItemsColumn>
+<EventList>
 
-{communityMeetups.map((meetup, indx) => (
+{communityMeetups.map((meetup) => (
 
-<p key={`meetup-${indx}`}>
-  {meetup.date}, {meetup.title}
-  <br /> {meetup.location} ({meetup.groupName})
-</p>
+<EventCard key={meetup.title} event={meetup} />
 
 ))}
 
-</ItemsColumn>
+</EventList>
 </Side>
 
 ---
@@ -134,8 +132,6 @@ layout: side
 layout: centered
 
 ---
-
-import neosoft from "./neosoft.png";
 
 <Image
   src={neosoft}
